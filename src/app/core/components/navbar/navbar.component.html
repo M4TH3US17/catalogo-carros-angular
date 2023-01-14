@@ -1,0 +1,34 @@
+<nav class="navbar">
+    <div class="container">
+        <img class="navbar-logo" src="../navbar/../../../../assets/img/logo.svg">
+
+        <div>
+            <i class="bi bi-list navbar-nav-mobile"></i>
+
+            <ul class="navbar-nav">
+                <li class="nav-item">Login</li>
+
+                <li class="nav-item dropdown"> 
+                    <button class="btn btn-theme" (click)="showDropdown()"> 
+                        <i class="bi bi-brightness-high-fill"></i>
+                        <i class="bi bi-caret-down-fill">     </i>
+                    </button>
+
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li> 
+                            <button class="dropdown-item d-flex align-items-center">
+                                <i class="bi bi-sun-fill"></i> <span>Light</span>
+                            </button> 
+                        </li>
+
+                        <li> 
+                            <button class="dropdown-item d-flex align-items-center">
+                                <i class="bi bi-moon-stars-fill"></i> <span>Dark</span>
+                            </button> 
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
