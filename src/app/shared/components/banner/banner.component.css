@@ -1,0 +1,47 @@
+.banner {
+    right: 0px; 
+    left:  0px;
+
+    position:     absolute;
+    z-index:      -1;
+    /*background: red;*/
+}
+
+.banner-info { 
+    width: 55%;
+    margin-top: 35px;
+}
+
+.banner-title, .banner-description { color: #fff; }
+
+.banner-title {
+    font-weight: 700;
+    font-size: 41px;
+}
+.banner-description {
+    font-size: 25px;
+}
+
+.banner {
+    height: 480px;
+    /*background: wheat;*/
+
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-position: 70%;
+}
+
+@media (max-width: 414px) {
+    .banner {
+      height: 270px;
+      background-size: cover;
+      background-position: 80%;
+    }
+
+    .banner-info { 
+        width: 80%;
+        margin-top: 19px;
+    }
+    .banner-description { display: none; }
+    .banner-title { font-weight: 500; font-size: 18px;}
+}

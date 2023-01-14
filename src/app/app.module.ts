@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { CoreModule }   from './core/core.module';
+import { HomeModule } from './pages/home/home.module';
 
 @NgModule({
   declarations: [
@@ -11,6 +12,8 @@ import { CoreModule }   from './core/core.module';
   imports: [
     BrowserModule,
     CoreModule,
+    
+    HomeModule // apagar dps q criar as rotas
   ],
   providers: [],
   bootstrap: [AppComponent]
